@@ -1,5 +1,11 @@
 import java.util.*;
+/* Ben Jay Sullera
+    Karen Jucdong
+    Mac Jason bronola
+    Yvonnie Durano
+    */
 
+    
 class ActivityMain3 {
     public static void main(String args[]) {
         Scanner scn = new Scanner(System.in);
