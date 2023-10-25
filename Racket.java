@@ -1,59 +1,58 @@
-package OOP;
+class Racket {
+    private double price;
+    private String brand;
+    private String category;
+    public String name;
 
-public class Racket {
-	private String name;
-	private String category;
-	private int price;
-	
-	
-	//constructor
-	Racket(){
-		
-	}
-	Racket (String name, String category, int price){
-		this.name = name;
-		this.category = category;
-		this.price = price;
-	}
-	
-	//Setter
-	
-	void setName(String name) {
-		this.name = name;
-		
-	}
-	void setCategory(String category) {
-		this.category = category;
-		
-	}
+    Racket() {
 
-	void setPrice(int price) {
-		this.price = price;
-		
-	}
-	
-	//Getters
-	
-	String getName () {
-		return this.name;
-		
-	}
-	
-	String getCategory() {
-		return this.category;
-	}
-	int getPrice() {
-		return this.price;
-	}
-	
-	//Display Method
-		void Display() {
-			System.out.println("Name: " + this.name);
-			System.out.println("Category: " + this.category);
-			System.out.println("Price: " + this.price + "\n"); 
-		}
+    }
 
+    Racket(String name) {
+        this.name = name;
+    }
 
-	
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    public double getPrice() {
+        return this.price;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public String getBrand() {
+        return this.brand;
+    }
+
+    public String getCategory() {
+        return this.category;
+    }
+
+    public void display() {
+        System.out.println();
+        System.out.println("Brand: " + this.brand);
+        System.out.println("Price: " + this.price);
+        System.out.println("Category: " + this.category);
+    }
+
+    public void f() {
+        System.out.println("make some feedback to the products: ");
+    }
 
 }
